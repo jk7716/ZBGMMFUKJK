@@ -13,7 +13,7 @@ Za projekt pri predmetu smo si izbrali podatkovno analizo tvitov ruskih "trolov"
 ## Podatki
 [Začetne podatke](https://www.kaggle.com/vikasg/russian-troll-tweets), ki vsebujejo 200.000 tvitov, smo pridobili s Kaggla, in sicer dve CSV datoteki: "tweets" in "users". Prva vsebuje podatke o tvitih, druga pa o uporabnikih. Relacijsko se povezujeta prek atributa "user_id".
 
-Našli smo [še ene podatke](https://github.com/fivethirtyeight/russian-troll-tweets), ki pa vsebujejo 3 milijone tvitov ruskih trolov. Te bomo po končani analizi manjših podatkov uporabili za primerjavo rezultatov.
+Med raziskavo smo naleteli na [še večji nabor podatkov](https://github.com/fivethirtyeight/russian-troll-tweets), ki vsebuje 3 milijone tvitov ruskih trolov. Te bomo po končani analizi manjšega nabora uporabili za primerjavo rezultatov.
 
 ## Analiza
 
@@ -27,7 +27,7 @@ Problem v podatkih je tudi, da najstarejši tweet seže le do julija 2014, najst
 
 Graf prikazuje število ustvarjenih računov glede na mesec. Opazimo dva izrazita vrhova v porazdelitvi in eno kasnejše izstopanje. Z uporabo Wikipedijinega portala Current Events smo poskušali povezati vrhove s svetovnimi dogodki in smo prišli do ugotovitve, da sovpadajo z glavnimi ruskimi političnimi potezami in sicer:
 
-* Začetek prvega izstopanja sovpada s Snowdenovim priznanjem "žvižgaštva" zaupnih dokumentov NSA in začetkom raziskave uporabe kemičnega orožja v Siriji. Vrh doseže ko Snowdnu podeli Rusija azil in na vrhuncu raziskave v Siriji.
+* Začetek prvega izstopanja sovpada s Snowdenovim priznanjem "žvižgaštva" zaupnih dokumentov NSA in začetkom raziskave uporabe kemičnega orožja v Siriji. Vrh doseže ko Snowdenu podeli Rusija azil in na vrhuncu raziskave v Siriji.
 
 * Drugo izstopanje sovpada s Krimsko krizo, v kateri si je Rusija priključila polotok. Natančnih dogodkov, poleg priključitve, nismo zasledili.
 
