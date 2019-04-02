@@ -21,7 +21,7 @@ Podatke smo pridobili s Kaggla, in sicer dve csv datoteke "tweets" in "users". R
 
 Problem v podatkih je tudi, da najstarejši tweet seže le do julija 2014 ampak najstarejši uporabnik pa vse do januarja 2009. Z izrisom grafov porazdelitve tweetov in nastanka računov po času lahko vidimo z metodo ostrega očesa, da se gostota periodično viša.
 
-<img href='./Images/Figure_2.png'>
+<img href='https://raw.githubusercontent.com/jk7716/ZBGMMFUKJK/master/Images/Figure_2.png'>
 
 Graf prikazuje število ustvarjenih računov glede na mesec. Opazimo dva izrazita vrhova v porazdelitvi in eno kasnejše izstopanje. Z uporabo Wikipedijinega portala Current Events smo poskušali povezati vrhove s svetovnimi dogodki in smo prišli do ugotovitve, da sovpadajo s glavnimi Ruskimi političnimi potezami in sicer:
 
@@ -31,7 +31,7 @@ Drugo izstopanje sovpada s Krimsko krizo, v kateri si je Rusija priključila pol
 
 Zadnje izstopanje sovpada s začetkom partijskih volitev v ZDA, kjer naj bi troli imeli vlogo pri izvolitvi Donalda Trumpa. Zaradi nizkega števila prijavljenjih računov pa je možno da nanj gledamo tudi kot osamelec, saj so prejšnji vzorci vrhov vsebovali vsaj štiri zaporedne mesce povečanega števila računov skupaj s izrazitim vrhom.
 
-<img href='./Images/Figure_3.png'>
+<img href='https://raw.githubusercontent.com/jk7716/ZBGMMFUKJK/master/Images/Figure_3.png'>
 
 Graf prikazuje število objavljenih tweetov glede na mesec. Razberemo lahko tri obdobja povečanega tweetanja. Podobno kot zgoraj smo poiskali sovpadanja s svetovnimi dogodki.
 
@@ -45,7 +45,7 @@ Tretje obdobje sovpada z začetkom partisjskih volitev v ZDA, podobno kakor v pr
 
 Hashtagi so osrednji način za označevanje tematik na Twitterju. Preko njih lahko razberemo ne le tematiko, ampak tudi opredeljenost uporabnika glede nje. Služijo lahko kot preprosto izhodišče za nenadzorovano učenje, za razliko od tekstovne analize celotnega tweeta. Preko najdenih skupin uporabnikov bomo lahko nato razbrali vzorce delovanja trolov, najpogostejše citirane medije, fraze, "false flag" napade... .
 
-<img href='./Images/Figure_1.png'>
+<img href='https://raw.githubusercontent.com/jk7716/ZBGMMFUKJK/master/Images/Figure_1.png'>
 
 Osnovni graf hashtagov glede na število prikazuje porazdelitev najpogostejših desetih hashtagov. Najzanimiveša sta #pjnet in #MerkelMussBleiben. Prvi je okrajšava za Patriot Journalist Network, družba katera je med volitvami na Twitterju vzdrževala bota, ki naj bi vsak dan objavil tisoč tweetov.
 Slednja pa namiguje, da so troli tudi komentirali zadeve izven Ameriške sfere.
