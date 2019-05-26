@@ -119,13 +119,16 @@ def bar_hash_unique_tuple(dict):
 
 def quick_dated_tweet(dated_tweets,month_string):
 
-    print("Number of unique hashtags: " + str(len(dated_tweets[month_string].top_tweets())))
-    for y,z in dated_tweets[month_string].top_tweets():
+    tweets = dated_tweets[month_string].top_tweets()[1:10]
+
+    for y,z in tweets:
             plot.bar(y,z,color='b',width=0.5)
-    plot.xticks(range(0,len(dated_tweets[month_string].top_tweets())),dated_tweets[month_string].top_tweets(),rotation=90)
-    plot.ylabel("Unique hashtags")
-    plot.xlabel("Month")
+    ticks = [x for x,y in tweets]
+    plot.xticks(range(0,10),ticks,rotation=270)
+    plot.title(month_string)
+    print("Number of unique hashtags: " + str(len(dated_tweets[month_string].top_tweets())))
     plot.show()
+    print("~~~~~~~~~~~~~~~~~~")
 
 
 
@@ -372,7 +375,7 @@ class DateTags:
         return tmp
 
 
-def the_graph(DataHoard):
+def the_graph(DataHoard,label=True):
     graph = nx.Graph()
     weight_dist = []
     heavy = []
@@ -420,11 +423,12 @@ def the_graph(DataHoard):
     pos=nx.spring_layout(graph,k=0.5)
 
     nx.draw_networkx_nodes(graph,pos,node_size=15,node_color="#000000")
-    nx.draw_networkx_labels(graph,pos)
+    if label==True:
+        nx.draw_networkx_labels(graph,pos)
 
 
-    #nx.draw_networkx_edges(graph,pos,edgelist=light,width=1,alpha=0.1,edge_color='g',style='dotted')
-    #nx.draw_networkx_edges(graph,pos,edgelist=medium,width=2,alpha=0.3,edge_color='b',style='dashed')
+    nx.draw_networkx_edges(graph,pos,edgelist=light,width=1,alpha=0.1,edge_color='g',style='dotted')
+    nx.draw_networkx_edges(graph,pos,edgelist=medium,width=2,alpha=0.3,edge_color='b',style='dashed')
     nx.draw_networkx_edges(graph,pos,edgelist=heavy,width=3,alpha=1,edge_color='r')
     plot.show()
 
@@ -439,7 +443,7 @@ def the_graph(DataHoard):
 
 #Testirna Koda
 
-data = DataHoard()
+#data = DataHoard()
 
 #Account Creation by time
 #bar_date_df(data.anal_date, "Account creation by date")
@@ -458,5 +462,5 @@ data = DataHoard()
 #quick_dated_tweet(data.dated_tweets,"2016-09")
 
 #Graph of grouping by links/hashtags
-#the_graph(data)
+#the_graph(data,label=False)
 
